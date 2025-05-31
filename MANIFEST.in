@@ -1,0 +1,4 @@
+include README.md
+include field_service_app/public/js/*.js
+recursive-include field_service_app *.py
+recursive-include field_service_app *.json

@@ -1,0 +1,86 @@
+{
+  "doctype": "DocType",
+  "name": "Work Order",
+  "module": "Field Service App",
+  "fields": [
+    {
+      "fieldname": "customer_name",
+      "label": "Customer Name",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "customer_phone",
+      "label": "Customer Phone",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "customer_address",
+      "label": "Customer Address",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "scheduled_date",
+      "label": "Scheduled Date",
+      "fieldtype": "Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "assigned_technician",
+      "label": "Assigned Technician",
+      "fieldtype": "Link",
+      "options": "Employee",
+      "reqd": 1
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Planned\nIn Progress\nCompleted\nCancelled",
+      "default": "Planned",
+      "reqd": 1
+    },
+    {
+      "fieldname": "estimate_amount",
+      "label": "Estimate Amount",
+      "fieldtype": "Currency"
+    },
+    {
+      "fieldname": "estimate_approved",
+      "label": "Estimate Approved",
+      "fieldtype": "Check"
+    },
+    {
+      "fieldname": "deposit_amount",
+      "label": "Deposit Amount",
+      "fieldtype": "Currency"
+    },
+    {
+      "fieldname": "invoice",
+      "label": "Invoice",
+      "fieldtype": "Link",
+      "options": "Sales Invoice"
+    },
+    {
+      "fieldname": "call_log",
+      "label": "Call Log",
+      "fieldtype": "Link",
+      "options": "Call Log"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1
+    }
+  ],
+  "is_submittable": false,
+  "autoname": "field:customer_name",
+  "track_changes": true
+}
