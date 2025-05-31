@@ -6,10 +6,10 @@ app_email = "you@example.com"
 app_license = "MIT"
 
 # Подключаем JS-файлы, если они реально существуют
-app_include_js = [
-    "/assets/field_service_app/js/dashboard.js",
-    "/assets/field_service_app/js/work_order.js"
-]
+#app_include_js = [
+#    "/assets/field_service_app/js/dashboard.js",
+#    "/assets/field_service_app/js/work_order.js"
+#]
 
 # Автоматическое создание Work Order при обновлении Call Log
 doc_events = {
